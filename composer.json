@@ -1,0 +1,13 @@
+{
+  "name": "the16thpythonist/scopus-collaboration-checker",
+  "description": "utility for checking collaborations with scopus api",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "the16thpythonist\\Checker\\": "src/Checker"
+    }
+  },
+  "require": {
+    "kasparsj/scopus-search-api":"9999999-dev"
+  }
+}
