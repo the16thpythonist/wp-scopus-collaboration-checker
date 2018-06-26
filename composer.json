@@ -4,7 +4,7 @@
   "type": "library",
   "autoload": {
     "psr-4": {
-      "the16thpythonist\\Checker\\": "src/Checker"
+      "the16thpythonist\\Checker\\": "src/the16thpythonist/Checker"
     }
   },
   "require": {

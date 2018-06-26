@@ -8,8 +8,6 @@
 
 namespace the16thpythonist\Checker;
 
-use Scopus\Response\Abstracts;
-
 interface CollaborationGuesserInterface
 {
     public function set($publication);
