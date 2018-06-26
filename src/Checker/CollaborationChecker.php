@@ -10,10 +10,11 @@ namespace the16thpythonist\Checker;
 
 use Scopus\Response\Abstracts;
 use OutOfRangeException;
+use Closure;
 
 class CollaborationChecker
 {
-    public $AUTHOR_LIMIT = 25;
+    public $AUTHOR_LIMIT = 20;
 
     public $abstract;
     public $data;
