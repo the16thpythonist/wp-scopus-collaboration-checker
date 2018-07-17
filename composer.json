@@ -9,5 +9,8 @@
   },
   "require": {
     "kasparsj/scopus-search-api":"9999999-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6"
   }
 }
