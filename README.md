@@ -40,3 +40,9 @@ Todo
 
 - The test case of for the HeuristicCollaborationGuesser can easily be rewritten using text fixtures, 
 but I dont know how they work in PHP yet.
+
+### 0.0.0.2 - 17.07.2018
+
+- Fixed bug in HeuristicCollaborationGuesser: The guess wasnt being cleared with each new state, which 
+means if there was a guess previously it would also be used for all the following publications, even though 
+their computation didnt bring anything up.

@@ -103,7 +103,11 @@ class HeuristicCollaborationGuesser
      *
      * CHANGELOG
      *
-     * Added 17.07.2018
+     * Added 17.07.2018 - 0.0.0.1
+     *
+     * Changed 17.07.2018 - 0.0.0.2
+     * Fixed the bug with a previous guess not being cleared and thus also being used for all following guesses even
+     * though the computation didnt bring anything up
      *
      * @since 0.0.0.1
      *
@@ -111,6 +115,13 @@ class HeuristicCollaborationGuesser
      * @param array $tags       the array of string tags for the publication
      */
     public function set($title, $tags) {
+        /*
+         * For a new set of title and tags the guess has to be cleared first, because if the previous publication
+         * actually had a guess and the current one doesnt without clearing it the previous one would be taken for
+         * the current one as well.
+         */
+        $this->guess = '';
+
         $this->title = $title;
         $this->tags = $tags;
 
